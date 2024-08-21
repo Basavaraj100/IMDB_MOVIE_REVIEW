@@ -72,13 +72,13 @@ def preprocess_text(text):
 import pickle
 def load_the_pickle_file(path,file):
     model_path = os.path.join(path, file)
-    model = pickle.load(open(model_path, 'rb'))
+    model = pickle.load(open(file, 'rb'))
     return model
 
 #  to load keras model
 def load_keras_model(path,file):
   model_path=os.path.join(path,file)
-  k_model=tf.keras.models.load_model(model_path)
+  k_model=tf.keras.models.load_model(file)
   return k_model
 
 
