@@ -1,0 +1,6 @@
+tensorflow
+nltk
+ipykernel
+streamlit
+contractions
+gdown
