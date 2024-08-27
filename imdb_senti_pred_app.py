@@ -126,7 +126,7 @@ def predict_movie_sentiment(text):
   #  predict from the model
   pred=model.predict(final_seq_text)
   # getting result
-  res='Positive' if pred[0][0]>0.5 else 'Negavtive'
+  res='Positive' if pred[0][0]>0.5 else 'Negative'
   return res,pred
 
 
@@ -141,7 +141,7 @@ if text:
    if st.button('Predict'):
       res,pred=predict_movie_sentiment(text)
 
-      st.text(f'Reviews is {res}')
+      st.text(f'Review is {res}')
 else:
    st.warning('Enter the movie review and presh enter, followed by predict ')
 
