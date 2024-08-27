@@ -1,5 +1,0 @@
-tensorflow
-nltk
-ipykernel
-streamlit
-contractions
